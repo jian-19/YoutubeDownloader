@@ -34,16 +34,16 @@ class App:
         output = [
             [pg.ProgressBar(100, orientation='h', size=(39, 1), border_width=6, key='progress_bar')],
             [pg.Text(f"{9*' '}YouTube Downloader\n", text_color="Red", border_width=6, font=("Muro", 22), key="label", pad=(4, 10))],
-            [pg.Text("Selecione a Playlist de música:", font=("bebas", 15), pad=(4, 10))],
-            [pg.Radio("Música", 'playlist_or_song', default=True, font=("Arial", 15), size=(10, 1)),
-             pg.Radio("Playlist", 'playlist_or_song', font=("Arial", 15), size=(10, 1))],
-            [pg.Text("Selecione o formato que deseja baixar:", font=("bebas", 15), pad=(4, 10))],
-            [pg.Radio("Audio", 'audio_or_video', default=True, font=("Arial", 15), size=(10, 1)),
-             pg.Radio("Video", 'audio_or_video', font=("Arial", 15), size=(10, 1))],
-            [pg.Text("Cole o link do YouTube aqui:", font=("bebas", 15), pad=(4, 10))],
+            [pg.Text("Selecione a Playlist de música:", font=("bebas", 15), pad=(65, 10))],
+            [pg.Radio("Música", 'playlist_or_song', default=True, font=("Arial", 15), pad=(35, 0), size=(10, 1)),
+             pg.Radio("Playlist", 'playlist_or_song', font=("Arial", 15), pad=(35, 0), size=(10, 1))],
+            [pg.Text("Selecione o formato que deseja baixar:", font=("bebas", 15), pad=(40, 10))],
+            [pg.Radio("Audio", 'audio_or_video', default=True, font=("Arial", 15), pad=(35, 0), size=(10, 1)),
+             pg.Radio("Video", 'audio_or_video', font=("Arial", 15), pad=(35, 0), size=(10, 1))],
+            [pg.Text("Cole o link do YouTube aqui:", font=("bebas", 15), pad=(85, 0))],
             [pg.InputText(do_not_clear=False, pad=(10, 4), font=("Arial", 15), size=(38, 4))],
             [pg.Button('Download', button_color="black", bind_return_key=True, size=(10, 2), font=("bebas", 15), pad=((145, 0), (20, 20)))],
-            [pg.Text("Criador: Jian Rodrigues Ferreira", text_color="white", border_width=6, font=("Muro", 15), key="labe8", pad=((60, 0), (10, 4)))],
+            [pg.Text("Criador: Jian Rodrigues Ferreira", text_color="white", border_width=6, font=("Arial", 15), key="labe8", pad=((55, 0), (10, 4)))],
         ]
         return output
 
